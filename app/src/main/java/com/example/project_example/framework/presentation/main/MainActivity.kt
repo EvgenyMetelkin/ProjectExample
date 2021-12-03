@@ -7,9 +7,10 @@ import androidx.annotation.NavigationRes
 import androidx.navigation.NavController
 import com.example.project_example.R
 import com.example.project_example.framework.presentation.main.multifeature.MainFragmentFactory
+import com.example.project_example.framework.presentation.main.multifeature.MainNavController
 import com.example.project_example.framework.presentation.main.multifeature.MainNavHostFragment
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), MainNavController {
 
     private val TAG = "MainActivity"
 
