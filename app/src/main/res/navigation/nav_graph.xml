@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/tabFragment">
 
     <fragment
         android:id="@+id/tabFragment"
         android:name="com.example.project_example.framework.presentation.tabs.TabFragment"
-        android:label="TabFragment" >
+        android:label="TabFragment"
+        tools:layout="@layout/fragment_tab">
         <action
             android:id="@+id/action_tabFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
@@ -15,5 +17,10 @@
     <fragment
         android:id="@+id/detailsFragment"
         android:name="com.example.project_example.framework.presentation.details.DetailsFragment"
-        android:label="DetailsFragment" />
+        android:label="Details Fragment"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="dataItem"
+            app:argType="com.example.betting_strategies.business.domain.model.DataItem" />
+    </fragment>
 </navigation>

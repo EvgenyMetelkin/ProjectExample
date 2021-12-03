@@ -27,7 +27,7 @@ class TabFragment @Inject constructor(
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // viewModel !!
+        viewModel.setNavigator(this)
     }
 
     override fun onCreateView(
@@ -50,7 +50,7 @@ class TabFragment @Inject constructor(
     }
 
     private fun navigateToDetails(dataItem: DataItem) = findNavController().navigate(
-        TabFragmentDirections.action_tabFragment_to_detailsFragment(dataItem)
+        TabFragmentDirections.actionTabFragmentToDetailsFragment(dataItem)
     )
 
     override fun goToDetails(dataItem: DataItem) {
