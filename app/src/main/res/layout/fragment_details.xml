@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.example.betting_strategies.framework.base.view.StarView
+    <com.example.project_example.framework.base.view.StarView
         android:id="@+id/addToFavorites"
         android:layout_width="50dp"
         android:layout_height="50dp"

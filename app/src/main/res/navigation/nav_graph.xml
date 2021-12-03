@@ -21,6 +21,6 @@
         tools:layout="@layout/fragment_details">
         <argument
             android:name="dataItem"
-            app:argType="com.example.betting_strategies.business.domain.model.DataItem" />
+            app:argType="com.example.project_example.business.domain.model.DataItem" />
     </fragment>
 </navigation>

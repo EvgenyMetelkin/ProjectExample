@@ -49,7 +49,7 @@
             android:text="@string/show_more_text" />
     </LinearLayout>
 
-    <com.example.betting_strategies.framework.base.view.StarView
+    <com.example.project_example.framework.base.view.StarView
         android:id="@+id/addToFavorites"
         android:layout_width="50dp"
         android:layout_gravity="end|center_vertical"
