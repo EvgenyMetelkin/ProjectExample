@@ -53,7 +53,6 @@
         android:id="@+id/addToFavorites"
         android:layout_width="50dp"
         android:layout_gravity="end|center_vertical"
-        android:layout_height="50dp"
-        tools:ignore="MissingClass" />
+        android:layout_height="50dp" />
 
 </FrameLayout>
